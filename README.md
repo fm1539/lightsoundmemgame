@@ -63,6 +63,8 @@ When trying to extend the capabilities of my project, I initially had some diffi
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words)  
 
+If I had a few more hours to work on this project, I would try to animate the game buttons once they are clicked, add a scoreboard so that the user can compare the score that he/she earned with the scores of other users who played as well, and create a login system so that users can save their progress. I also would want to incorporate levels in the game, where difficulty of the game would increase as the user increases their level. More specifically, I would want to add more buttons after completing each level, and instead of playing one extra key, a variable number of keys would be played after currently guessing a sequence. For instance, first one button would be played, and after that button was clicked, two more buttons would be played, then three more buttons, etc.  
+
 
 
 ## License
