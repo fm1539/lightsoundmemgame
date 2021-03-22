@@ -90,6 +90,15 @@ button {
   background: #b17428;
 }
 
+#button9 {
+  background: #7999af;
+}
+
+#button9:active, #button9.lit {
+  background: #152238;
+}
+
+
 .hidden {
   display: none;
 }
