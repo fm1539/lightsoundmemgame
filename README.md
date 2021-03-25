@@ -22,7 +22,7 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+* [X] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [X] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [X] More than 4 functional game buttons
 * [X] Playback speeds up on each turn
@@ -34,7 +34,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+- [X] Added animated images depending on if the user won the current round or not
 
 ## Video Walkthrough
 
