@@ -4,9 +4,9 @@
 
 Submitted by: **FARHAN MASHUD**
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: https://siteprework.glitch.me (live site)
 
 ## Required Functionality
 
@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](site1.gif)
+![](updatedsite1.gif)
 
 
 ## Reflection Questions
