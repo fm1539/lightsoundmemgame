@@ -18,7 +18,17 @@ button {
   border-radius: 10px;
 }
 
+.main-bg {
+  background-color: None
+}
 
+.win-bg {
+  background-image:url('https://cdn.glitch.com/0195e91b-8c59-42f4-9493-8822069d0034%2Fgiphy.gif?v=1616640116246')
+}
+
+.lose-bg {
+  background-image:url('https://cdn.glitch.com/0195e91b-8c59-42f4-9493-8822069d0034%2Fx.gif?v=1616641380404')
+}
 
 #gameButtonArea > button {
   width: 200px;
