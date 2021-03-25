@@ -37,7 +37,8 @@ function startGame() {
 
 function stopGame() {
   gamePlaying = false;
-  pattern = []  //reset the pattern so that it is empty. It will get filled when the game starts again
+  pattern = [];  //reset the pattern so that it is empty. It will get filled when the game starts again
+  clueHoldTime = 1000;
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
 }
@@ -108,13 +109,15 @@ function playClueSequence() {
     setTimeout(playSingleClue, delay, pattern[i]);
     delay += clueHoldTime;
     delay += cluePauseTime;
-    clueHoldTime -= 10; //SPEED UP PATTERN PLAYING!
   }
+  clueHoldTime -= 20; //SPEED UP PATTERN PLAYING!
+
 }
 
 function loseGame() {
   stopGame();
   alert("Game over. You Lost");
+  clueHoldTime = 1000 //RESET ORIGINAL SPEED
 }
 
 function winGame() {
@@ -141,6 +144,7 @@ function guess(btn) {
   } else {
     if (numMistakes == 2) {
       loseGame();
+      clueHoldTime = 1000 //RESET TO ORIGINAL SPEED
     } else {
       numMistakes += 1;
       clueHoldTime += 10; //re-add the lost hold time so that it is fair for the user to catch up and not speed up even after making a mistake
