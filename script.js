@@ -14,7 +14,7 @@ const nextClueWaitTime = 1000;
 
 function generateRandomPattern() {
   //THIS RANDOMIZES THE PATTERN ARRAY
-  for (let i = 1; i < 15; i++) {
+  for (let i = 1; i < 8; i++) {
     var randNum = Math.round(Math.random() * i) + 1; //ADD 1 in order to remove any potential 0
     if (randNum > 9) {
       //if the random number goes past 8 then circle back to 1
@@ -26,6 +26,8 @@ function generateRandomPattern() {
 }
 
 function startGame() {
+  document.getElementById('main').classList = [] //resets class list to remove any background images
+  document.getElementById('main').classList.add('main-bg')
   progress = 0;
   numMistakes = 0; //added so that you lose after 3 mistakes, initially u lose after 1
   gamePlaying = true;
@@ -110,18 +112,22 @@ function playClueSequence() {
     delay += clueHoldTime;
     delay += cluePauseTime;
   }
-  clueHoldTime -= 20; //SPEED UP PATTERN PLAYING!
+  clueHoldTime -= 50; //SPEED UP PATTERN PLAYING!
 
 }
 
 function loseGame() {
   stopGame();
+  document.getElementById('main').classList.remove("main-bg")  //removes placeholder class in list
+  document.getElementById('main').classList.add("lose-bg")  //inserts background image to signal loss 
   alert("Game over. You Lost");
   clueHoldTime = 1000 //RESET ORIGINAL SPEED
 }
 
 function winGame() {
   stopGame();
+  document.getElementById('main').classList.remove("main-bg") //removes placeholder class in list
+  document.getElementById('main').classList.add("win-bg") //inserts background image to signal victory
   alert("Game over. You won!");
 }
 
